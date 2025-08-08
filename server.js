@@ -22,7 +22,7 @@ app.post("/submit", async (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "shishirprogramer7569@gmail.com",           // 🔁 Where client receives mail
+    to: "shishir.code3k@proton.me",           // 🔁 Where client receives mail
     subject: `New Work Application from ${name}`,
     html: `
       <h3>New Application Received</h3>
