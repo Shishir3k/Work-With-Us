@@ -1,24 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.card {
-    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+.modern-modal {
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 255, 255, 0.4);
+    padding: 10px;
 }
 
-.btn-info {
-    background-color: #00ffff;
-    color: black;
+.modern-input {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.modern-input:focus {
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    outline: none;
+}
+
+.modern-btn {
     font-weight: bold;
+    background: linear-gradient(90deg, #00ffff, #00cccc);
     border: none;
-    transition: 0.3s;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #000;
 }
 
-.btn-info:hover {
-    background-color: #00cccc;
-    color: white;
-}
-
-.border-info {
-    border-color: #00ffff !important;
+.modern-btn:hover {
+    background: linear-gradient(90deg, #00cccc, #00ffff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
 }

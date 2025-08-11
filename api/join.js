@@ -5,10 +5,10 @@ module.exports = async (req, res) => {
     return res.status(405).json({ success: false, message: "Method not allowed" });
   }
 
-  const { name, email, message } = req.body;
+  const { firstName, lastName, email, mobile, device, address, skills } = req.body;
 
-  if (!name || !email || !message) {
-    return res.status(400).json({ success: false, message: "All fields required" });
+  if (!firstName || !lastName || !email || !mobile || !device || !address || !skills) {
+    return res.status(400).json({ success: false, message: "All fields are required" });
   }
 
   try {
@@ -20,11 +20,25 @@ module.exports = async (req, res) => {
       }
     });
 
+    const fullName = `${firstName} ${lastName}`;
+    const emailBody = `
+New Join Application:
+
+Full Name: ${fullName}
+Email: ${email}
+Mobile: ${mobile}
+Device: ${device}
+Address: ${address}
+
+What they can do:
+${skills}
+    `;
+
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
       to: process.env.RECEIVER_EMAIL,
-      subject: `New Join Application from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+      subject: `New Join Application from ${fullName}`,
+      text: emailBody
     });
 
     res.status(200).json({ success: true, message: "Form submitted successfully!" });
