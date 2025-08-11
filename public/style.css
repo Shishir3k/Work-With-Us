@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.btn-info {
+    background-color: #00ffff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    background-color: #00cccc;
+    color: white;
+}
+
+.border-info {
+    border-color: #00ffff !important;
+}
