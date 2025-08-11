@@ -22,15 +22,15 @@ module.exports = async (req, res) => {
 
     const fullName = `${firstName} ${lastName}`;
     const emailBody = `
-New Join Application:
+🚀 New Join Request Received  
 
-Full Name: ${fullName}
-Email: ${email}
-Mobile: ${mobile}
-Device: ${device}
-Address: ${address}
+👤 Name: ${fullName}  
+📧 Email: ${email}  
+📱 Mobile: ${mobile}  
+💻 Device: ${device}  
+🏠 Address: ${address}  
 
-What they can do:
+💡 Skills & Contributions:  
 ${skills}
     `;
 
