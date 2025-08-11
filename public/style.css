@@ -1,6 +1,5 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: rgba(20, 20, 20, 0.9);
 }
 
 .modern-modal {
@@ -71,4 +70,5 @@ body {
     background: linear-gradient(90deg, #00cccc, #00ffff);
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
+
 }
