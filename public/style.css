@@ -1,5 +1,6 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: rgba(20, 20, 20, 0.9);
 }
 
 .modern-modal {
@@ -38,4 +39,36 @@ body {
     background: linear-gradient(90deg, #00cccc, #00ffff);
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Hero Section Glow */
+.glowing-text {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8),
+                 0 0 20px rgba(0, 255, 255, 0.6),
+                 0 0 30px rgba(0, 255, 255, 0.4);
+}
+
+/* Glass Effect Card */
+.glass-card {
+    background: rgba(20, 20, 20, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 255, 255, 0.2);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Hover Button Glow */
+.modern-btn {
+    background: linear-gradient(90deg, #00ffff, #00cccc);
+    color: #000;
+    font-weight: bold;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.modern-btn:hover {
+    background: linear-gradient(90deg, #00cccc, #00ffff);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.5);
 }

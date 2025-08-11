@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,92 +8,105 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-dark text-light">
 
-<div class="container text-center py-5">
-    <h1 class="text-info">[Work With Us]</h1>
-    <p class="lead">Our mission is to unite creators on a strong platform where they can grow their talent, collaborate with others, and improve both the quality and reach of their content. Moving forward together is the core goal of our team.</p>
-    
-    <div class="card bg-dark border-info shadow p-4 mt-4">
-        <h4 class="text-info">Active Team Members (Developed by @shishir3k)</h4>
-        <hr class="border-light">
-        <p class="text-muted">No members added yet.</p>
+    <div class="container text-center py-5">
+        <h1 class="display-4 fw-bold text-info glowing-text">[Work With Us]</h1>
+        <p class="lead text-light opacity-75 mt-3">
+            Our mission is to unite creators on a strong platform where they can grow their talent,
+            collaborate with others, and improve both the quality and reach of their content.
+            <br>
+            <span class="fw-semibold text-info">Moving forward together is the core goal of our team.</span>
+        </p>
+
+        <!-- Active Members Card -->
+        <div class="card glass-card mt-5">
+            <h4 class="text-info mb-2">Active Team Members <small class="text-muted fs-6">(Developed by
+                    @shishir3k)</small></h4>
+            <hr class="border-light">
+            <p class="text-muted">No members added yet.</p>
+        </div>
+
+        <!-- Join Now Button -->
+        <button class="btn btn-info modern-btn mt-4 px-5 py-3 fs-5" data-bs-toggle="modal" data-bs-target="#joinModal">
+            <i class="bi bi-person-plus-fill me-2"></i> Join Now
+        </button>
     </div>
 
-    <button class="btn btn-info mt-4" data-bs-toggle="modal" data-bs-target="#joinModal">
-        Join Now [Work With Us]
-    </button>
-</div>
-
-<!-- Join Modal -->
-<!-- Join Modal -->
-<div class="modal fade" id="joinModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content modern-modal">
-      <div class="modal-header border-0">
-        <h5 class="modal-title text-info fw-bold">
-          <i class="bi bi-person-plus-fill me-2"></i>Join Our Team
-        </h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        <form id="joinForm" class="row g-3">
-          <div class="col-md-6">
-            <label class="form-label">First Name</label>
-            <input type="text" class="form-control form-control-lg modern-input" name="firstName" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Last Name</label>
-            <input type="text" class="form-control form-control-lg modern-input" name="lastName" required>
-          </div>
-          <div class="col-md-12">
-            <label class="form-label">Email</label>
-            <input type="email" class="form-control form-control-lg modern-input" name="email" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Mobile Number</label>
-            <input type="tel" class="form-control form-control-lg modern-input" name="mobile" required>
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Device Name</label>
-            <input type="text" class="form-control form-control-lg modern-input" name="device" required>
-          </div>
-          <div class="col-md-12">
-            <label class="form-label">Address</label>
-            <textarea class="form-control form-control-lg modern-input" name="address" rows="2" required></textarea>
-          </div>
-          <div class="col-md-12">
-            <label class="form-label">What you can do?</label>
-            <textarea class="form-control form-control-lg modern-input" name="skills" rows="3" required></textarea>
-          </div>
-          <div class="col-md-12">
-            <button type="submit" class="btn btn-info btn-lg w-100 modern-btn">
-              <i class="bi bi-send-fill me-1"></i> Submit Application
-            </button>
-          </div>
-        </form>
-      </div>
+    <!-- Join Modal -->
+    <div class="modal fade" id="joinModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modern-modal">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-info fw-bold">
+                        <i class="bi bi-person-plus-fill me-2"></i>Join Our Team
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="joinForm" class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control form-control-lg modern-input" name="firstName"
+                                required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control form-control-lg modern-input" name="lastName"
+                                required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-lg modern-input" name="email" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Mobile Number</label>
+                            <input type="tel" class="form-control form-control-lg modern-input" name="mobile" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Device Name</label>
+                            <input type="text" class="form-control form-control-lg modern-input" name="device" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label">Address</label>
+                            <textarea class="form-control form-control-lg modern-input" name="address" rows="2"
+                                required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label class="form-label">What you can do?</label>
+                            <textarea class="form-control form-control-lg modern-input" name="skills" rows="3"
+                                required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-info btn-lg w-100 modern-btn">
+                                <i class="bi bi-send-fill me-1"></i> Submit Application
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.getElementById("joinForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
-    const formData = new FormData(this);
-    const data = Object.fromEntries(formData.entries());
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("joinForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
 
-    const res = await fetch("/api/join", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-    });
+            const res = await fetch("/api/join", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data)
+            });
 
-    const result = await res.json();
-    alert(result.message);
-});
-</script>
+            const result = await res.json();
+            alert(result.message);
+        });
+    </script>
 </body>
+
 </html>
